@@ -15,7 +15,7 @@ scoreboard objectives add spawn_posX dummy
 scoreboard objectives add spawn_posY dummy
 scoreboard objectives add spawn_posZ dummy
 
-# Create and enable the spawn trigger
+# Create the spawn trigger (enabled @spawn:set)
 scoreboard objectives add spawn trigger
 
 

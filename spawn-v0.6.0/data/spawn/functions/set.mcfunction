@@ -24,7 +24,7 @@ execute as @s at @s run summon area_effect_cloud ~ ~ ~ {Age:-2147483648, Duratio
 #       Fix Spawn Entity's Rotation       #
 # --------------------------------------- #
 
-# Fix the rotation by teleporting it to the player facing the same direction
+# Fix the rotation by teleporting the spawn entity to the player (facing the same direction)
 execute as @e[type=area_effect_cloud, tag=spawn_entity] at @s rotated as @a[tag=setting_spawn] run tp @s ~ ~ ~ ~ 0
 
 
@@ -36,7 +36,7 @@ execute as @e[type=area_effect_cloud, tag=spawn_entity] at @s rotated as @a[tag=
 function spawn:scripts/getcoords
 
 # Alert the issuer that spawn has been set at those coordinates
-execute as @s run tellraw @s [{"text":"[Spawn] ","color":"aqua"},{"text":"Spawn has been set to: ","color":"white"},{"text":"x","color":"gold"},{"text":"","extra":[{"score":{"name":"@s","objective":"spawn_posX"}}],"color":"white"},{"text":" y","color":"gold"},{"text":"","extra":[{"score":{"name":"@s","objective":"spawn_posY"}}],"color":"white"},{"text":" z","color":"gold"},{"text":"","extra":[{"score":{"name":"@s","objective":"spawn_posZ"}}],"color":"white"}, {"text": "!", "color": "white"}]
+execute as @s run tellraw @s [{"text":"[Spawn] ", "color": "aqua"},{"text": "Spawn has been set to: ", "color": "white"},{"text": "x", "color": "gold"},{"text": "", "extra": [{"score": {"name": "@s", "objective": "spawn_posX"}}], "color": "white"}, {"text": " y", "color": "gold"}, {"text": "", "extra": [{"score": {"name": "@s", "objective": "spawn_posY"}}], "color": "white"}, {"text": " z", "color": "gold"}, {"text": "", "extra": [{"score": {"name": "@s", "objective": "spawn_posZ"}}], "color": "white"}, {"text": "!", "color": "white"}]
 
 
 # ------------------------------ #
