@@ -24,4 +24,4 @@ scoreboard objectives add spawn trigger
 # ------------------------------- #
 
 # Alert the users that the datapack has finished initialization
-execute as @a run tellraw @s [{"text": "[Spawn] ", "color": "aqua"}, {"text": "(v0.6.0) ", "color": "green"}, {"text": "has been installed successfully!", "color": "white"}]
+execute as @a run tellraw @s [{"text": "[Spawn] ", "color": "aqua"}, {"text": "(_version_) ", "color": "green"}, {"text": "has been installed successfully!", "color": "white"}]
