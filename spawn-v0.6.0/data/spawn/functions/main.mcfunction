@@ -1,12 +1,3 @@
-# -------------------------------- #
-#       Datapack Init Module       #
-# -------------------------------- #
-
-# Create an objective to prevent further initialization and run spawn:init
-scoreboard objectives add spawn_init dummy
-execute unless score $init spawn_init matches 1 run function spawn:scripts/install
-
-
 # ----------------------------------- #
 #       Check For Spawn Trigger       #
 # ----------------------------------- #
