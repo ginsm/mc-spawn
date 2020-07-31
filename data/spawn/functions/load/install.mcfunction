@@ -1,9 +1,9 @@
-# ------------------------------ #
-#       Begin Initializing       #
-# ------------------------------ #
+# ---------------------------- #
+#       Begin Installing       #
+# ---------------------------- #
 
-# Stop init from running again
-scoreboard players set $init spawn_init 1
+# Stop install from running again
+scoreboard players set $init spawn_install 1
 
 
 # -------------------------------------------- #
@@ -19,9 +19,9 @@ scoreboard objectives add spawn_posZ dummy
 scoreboard objectives add spawn trigger
 
 
-# ------------------------------- #
-#       Finish Initializing       #
-# ------------------------------- #
+# ---------------------------- #
+#       Finished Install       #
+# ---------------------------- #
 
 # Alert the users that the datapack has finished initialization
 execute as @a run tellraw @s [{"text": "[Spawn] ", "color": "aqua"}, {"text": "(_version_) ", "color": "green"}, {"text": "has been installed successfully!", "color": "white"}]

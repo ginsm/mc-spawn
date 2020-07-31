@@ -6,12 +6,12 @@ This datapack allows you to set a spawn point, teleport to it (from any dimensio
 
 ## Commands
 
-| Command                           | Description                    |
-| --------------------------------- | ------------------------------ |
-| /trigger spawn                    | Teleport to the spawn location |
-| /function spawn:set               | Sets the spawn location        |
-| /function spawn:protect           | Outputs the protection options |
-| /function spawn:scripts/uninstall | Uninstall the datapack         |
+| Command                   | Description                    |
+| ------------------------- | ------------------------------ |
+| /trigger spawn            | Teleport to the spawn location |
+| /function spawn:set       | Sets the spawn location        |
+| /function spawn:protect   | Outputs the protection options |
+| /function spawn:uninstall | Uninstall the datapack         |
 
 &nbsp;
 

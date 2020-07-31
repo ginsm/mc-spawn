@@ -9,6 +9,6 @@ execute as @a run tellraw @s [{"text": "[Spawn] ", "color": "aqua"}, {"text": "(
 #       Initialize Datapack       #
 # ------------------------------- #
 
-# Create an objective to prevent further initialization and run spawn:init
-scoreboard objectives add spawn_init dummy
-execute unless score $init spawn_init matches 1 run function spawn:scripts/install
+# Create an objective to prevent install from running more than once
+scoreboard objectives add spawn_install dummy
+execute unless score $init spawn_install matches 1 run function spawn:load/install
