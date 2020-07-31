@@ -1,8 +1,26 @@
 # spawn
 
-This is my first Minecaft DataPack; I began learning how to create them last night. It's a bit different being unable to utilize variables easily and has challenged me to think outside the box thus far.
+This datapack allows you to set a spawn point, teleport to it (from any dimension), and add radial protection.
 
-I have most of the features implemented but this is still largely a work-in-progress.
+&nbsp;
+
+## Commands
+
+| Command                                 | Description                     |
+| --------------------------------------- | ------------------------------- |
+| /function spawn:set                     | Sets the spawn location         |
+| /trigger spawn                          | Teleports to the spawn location |
+| /functin spawn:scripts/uninstall &nbsp; | Uninstall the datapack          |
+
+&nbsp;
+
+## Troubleshoot
+
+**/trigger spawn says 'You cannot trigger this objective yet'**
+
+You'll need to set your spawn before being able to use `/trigger spawn`. :)
+
+&nbsp;
 
 ## Todo
 
