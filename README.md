@@ -29,7 +29,8 @@ You'll need to set your spawn before being able to use `/trigger spawn`. :)
   - [x] init
 - [x] spawn:set
   - [x] spawn:scripts/getcoords
-  - [x] Prevent setting spawn outside of overworld
-- [x] spawn:scripts/teleport
+  - [x] spawn:set/summonspawnentity
+- [x] spawn:main/teleport
   - [x] Multidimensional Teleport
 - [ ] spawn:protect
+  - [ ] spawn:protect/displayborder
