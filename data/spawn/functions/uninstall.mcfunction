@@ -7,7 +7,7 @@ scoreboard objectives remove spawn_posX
 scoreboard objectives remove spawn_posY
 scoreboard objectives remove spawn_posZ
 scoreboard objectives remove spawn
-scoreboard objectives remove spawn_init
+scoreboard objectives remove spawn_install
 
 # Kill the spawn_entity
 kill @e[type=area_effect_cloud,tag=spawn_entity]

@@ -13,7 +13,7 @@ cp -r pack.mcmeta ./data "$tmp"
 echo "> Copied files into $tmp"
 
 # Replace _version_ string in files with appropriate version
-find "./$tmp" -name "*.mcfunction" -exec sed -i '' -e "s/\"(_version_) \"/\"(${version}) \"/g" {} +
+find "./$tmp" -name "*.mcfunction" -exec sed -i '' -e "s/_version_/${version}/g" {} +
 echo "> Replaced all instances of _version_"
 
 # Zip the file

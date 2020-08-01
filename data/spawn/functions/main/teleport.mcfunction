@@ -8,3 +8,6 @@ execute in overworld as @s at @e[type=area_effect_cloud,tag=spawn_entity] positi
 # Reset the issuer's spawn score and enable it again
 scoreboard players reset @s spawn
 scoreboard players enable @a spawn
+
+# Alert the user about the success
+tellraw @a [{"text": "[Spawn] ", "color": "aqua"}, {"text": "You have been teleported to spawn!", "color": "white"}]
