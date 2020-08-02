@@ -18,9 +18,12 @@ echo "> Replaced all instances of _version_"
 
 # Zip the file
 echo "> Zipping..."
-zip -r "${tmp}.zip" "${tmp}"
+cd "./$tmp"
+zip -r "${tmp}.zip" "./data" "./pack.mcmeta"
+mv "${tmp}.zip" "../"
 echo "> Zipped $tmp into $tmp.zip"
 
 # Remove the temporary directory
+cd "../"
 rm -rf "$tmp"
 echo "> Removed $tmp"
